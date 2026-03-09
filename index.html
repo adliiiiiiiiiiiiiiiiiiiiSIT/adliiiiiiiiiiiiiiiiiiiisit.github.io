@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <h1 id="name"></h1>
+      <p id="title"></p>
+    </header>
+    
+    <header>
+      <div id="nav"></div>
+    </header>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <p id="description"></p>
+    </section>
+
+    <section>
+      <h1>My Skills</h1>
+      <p id="skills"></p>
+    </section>
+
+    <section id="main-projects">
+      <h1>Project Showcase</h1>
+      <div id="main-project-list"></div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p id="email"></p>
+      <p>
+        <a id="link-github">GitHub</a> |
+        <a id="link-linkedin">LinkedIn</a>
+      </p>
+    </section>
+    <script src="info.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      HeaderInfo.setHeaderInfo();
+      MainPage.setMainInfo();
+      MainPage.setProjectList();
+      Navigation.loadNavBar();
+    </script>
+  </body>
+</html>

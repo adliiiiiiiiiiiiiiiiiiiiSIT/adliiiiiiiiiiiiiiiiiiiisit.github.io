@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Experience | Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+        <h1 id="name"></h1>
+        <p id="title"></p>
+    </header>
+
+    <header>
+        <div id="nav"></div>
+    </header>
+    
+    <section id="work">
+      <h1>My Work Experiences</h1>
+      <div id="work-list"></div>
+    </section>
+
+    <script src="../info.js"></script>
+    <script src="../script.js"></script>
+
+    <script>
+        HeaderInfo.setHeaderInfo();
+        WorkPage.setWorkList();
+        Navigation.loadNavBar();
+    </script>
+  </body>
+</html>
