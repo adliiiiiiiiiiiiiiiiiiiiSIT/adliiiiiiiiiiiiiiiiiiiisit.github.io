@@ -131,6 +131,11 @@ section {
     background: white;
 }
 
+li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
 nav {
   margin-top: 10px;
 }
