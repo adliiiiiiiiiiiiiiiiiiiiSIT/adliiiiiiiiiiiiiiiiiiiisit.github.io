@@ -140,7 +140,22 @@ const ProjectPage = {
                 mediaWrapper.className = "gallery-item";
 
                 if (item.type === "image"){
-                    mediaWrapper.innerHTML = `<img src="${item.src}">`;
+                    const imgElement = document.createElement("img");
+                    imgElement.src = item.src;
+                    imgElement.alt = item.alt;
+                    imgElement.style.cursor = "zoom-in"; // Hit to click image
+
+                    imgElement.onclick = function(){
+                        const modal = document.getElementById("gallery-modal");
+                        const modalImg = document.getElementById("gallery-modal-content");
+                        const modalCaption = document.getElementById("gallery-modal-caption");
+                        
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                        modalCaption.textContent = this.alt;
+                    }
+                    mediaWrapper.appendChild(imgElement);
+            
                 } else if (item.type === "video"){
                     mediaWrapper.innerHTML = `<iframe src="${item.src}" frameborder="0" allowfullscreen></iframe>`;
                 }
@@ -175,6 +190,6 @@ const ProjectPage = {
             
             projectList.appendChild(card);
         })
-    }
+    },
 };
 

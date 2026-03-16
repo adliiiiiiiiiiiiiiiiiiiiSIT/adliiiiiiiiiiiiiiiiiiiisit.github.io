@@ -39,6 +39,12 @@
             <div class="gallery-container" id="gallery-list"></div>
         </section>
 
+        <div id="gallery-modal" class="modal">
+            <span class="close" id="gallery-modal-close">&times;</span>
+            <img class="gallery-modal-content" id="gallery-modal-content">
+            <div id="gallery-modal-caption" class="gallery-modal-caption"></div>
+        </div>
+
         <script src="../info.js"></script>
         <script src="../script.js"></script>
         <script>
@@ -47,6 +53,16 @@
 
             const projectName = new URLSearchParams(window.location.search).get("project");
             ProjectPage.setProjectInfo(projectName);
+
+            // Close modal if pressed anywhere else other than the img
+            window.onclick = function(event){
+                const modal = document.getElementById("gallery-modal");
+                const modalClose = document.getElementById("gallery-modal-close");
+                if (event.target == modal || event.target == modalClose){
+                    modal.style.display = "none";
+                }
+            }
+
         </script>
     </body>
 </html>
