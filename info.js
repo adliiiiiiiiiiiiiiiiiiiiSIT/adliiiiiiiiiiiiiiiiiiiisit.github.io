@@ -253,17 +253,23 @@ const projectInfo = {
 const mainInfo = {
     name: "Muhammad Adli Bin Jumahat",
     title: "Aspiring Game Developer",
-    description: `I am currently a second year undergraduate, studying Computing Science at Singapore Institute of Technology (SIT).
-                    I enjoy playing video games and always have a passion on building something, whether something in game or
-                    in real life. I aspire to be a game developer and hope to develop games people enjoy like how I did growing up.
-                    <Br><Br>
-                    I have experiences in working as Quality Assurance in a game company for 2 years, from development to live-operations and learn about game programming in Polytechnic and during my self learning.
-                    Now I am studying towards Softwares and Internet of Things (IoT) in my university. I have learnt a lot during my time working and in SIT and can't wait
-                    to apply my new knowledge to my work.
-                    <Br><Br>
-                    I love programming and developing new features as it very similar to solving puzzles in video games. 
-                    I am proactive in achieving my goals and am not afraid to face challenges to achieve them.
-                    I am also a teamplayer and gets along well with the people I work with during my time as a QA or as a student.`,
+    description: `I am currently a second-year undergraduate studying Computing Science at Singapore Institute of Technology (SIT) in collaboration with University of Glasgow. 
+                I always had a passion for creating, and through games, I developed an interest in programming. 
+                I aspire to become a game developer, developing games that others can enjoy as much as I did growing up.
+                <Br><Br>
+                My passion for game development continues to shape my academic journey and industry experience. I previously worked as a Quality Assurance Tester at XII Braves, 
+                where I gained hands-on exposure to the full development lifecycle, from feature testing during development sprints to supporting live operations and maintenance. 
+                As a QA, I worked closely with other departments such as game developers, game designers and even the story team. 
+                This gave me valuable insight on the complexity of making a polished product. During my time working there, 
+                I applied my background knowledge in programming and developed tools that aid me in my checking.
+                <Br><Br>
+                Currently, my studies at SIT allow me to deepen my knowledge in software engineering, Internet of Things (IoT), and backend development. Through projects, 
+                I continue to expand my technical skill set while applying best practices in coding and system design.
+                <Br><Br>
+                I enjoy programming because it feels much like solving puzzles in video games. Each challenge presents an opportunity to think creatively, 
+                experiment with solutions, and build something meaningful. I am proactive in pursuing my goals, eager to learn from new challenges, 
+                and enjoy collaborating with others to create high-quality solutions.
+                `,
 
     email: "mdadlij@gmail.com",
 
@@ -319,8 +325,8 @@ const educationInfo = {
                     <ul>
                         <li>Graduated with Diploma in Game Design & Development</li>
                         <li>Specialized in programming track of the course</li>
-                        <li>Design and developed serious games on Unity Software</li>
-                        <li>Texture and animated 3D models on Autodesk Maya Software</li>
+                        <li>Designed and developed serious games on Unity Software</li>
+                        <li>Textured and animated 3D models on Autodesk Maya Software</li>
                         <li>Developed an AR application for Hololens for Advanced Remanufacturing and Technological Centre (ARTC) for Major Project</li>
                     </ul>`,
     },
@@ -339,24 +345,24 @@ const workInfo = {
     xiiBraves: {
         name: "XII Braves",
         role: "Quality Assurance Tester",
-        details: `Worked as a quality assurance tester, experienced in development phase as well as dev-ops phase:
+        details: `Worked as a Quality Assurance Tester, experienced in development phase as well as dev-ops phase:
                     <ul>
-                        <li>Create test plans for various new features per sprints</li>
-                        <li>Test new features and report for bugs found</li>
-                        <li>Follow up on bugs found to see if issue has been fixed and thorough checks if other bugs was created as a byproduct</li>
-                        <li>Bring up concerns to the Game Designers and Game Developers for extreme edge cases beyond the test plans</li>
-                        <li>Create event document checklist to check upcoming events to come, checking if everything is in order prior to release</li>
-                        <li>Create maintance document checklist to check against during the maintaince period to see if everything is in order prior to end of maintanence</li>
+                        <li>Created test plans for various new features per sprints</li>
+                        <li>Tested new features and report bugs found</li>
+                        <li>Follow up on bugs found to see if issues were fixed without more being created</li>
+                        <li>Brought up concerns to the Game Designers and Developers for extreme edge cases beyond the test plans</li>
+                        <li>Prior to event release, created checklists to ensure smooth execution</li>
+                        <li>Created documentation checklists for maintenance period to run smoothly</li>
                     </ul>
                     Worked with the story team to help the company create game cutscenes:
                     <ul>
-                        <li>Manage a team of 2 to create cutscenes within the assigned deadline</li>
-                        <li>Communicate with different departments to deliver quality cutscenes</li>
-                        <li>Juggle with QA work to deliver both responsibilities without compromise</li>
+                        <li>Worked with a team of 2 to create cutscenes within the assigned deadline</li>
+                        <li>Communicated with different departments to deliver quality cutscenes</li>
+                        <li>Juggled with QA work to deliver both responsibilities without compromise</li>
                     </ul>
                     Other tasks of note:
                     <ul>
-                        <li>Utilize my background knowledge in programming to developed a tool that helps check through cutscenes for incorrect data</li>
+                        <li>Utilized my background knowledge in programming to developed a tool that helps check through cutscenes for incorrect data</li>
                         <li>Experienced creating Game Design Documents to pitch during game protyping phase</li>
                     </ul>`,
         year: "2021 to 2023"
@@ -366,10 +372,10 @@ const workInfo = {
         role: "Software Engineer",
         details: `Work as a software engineer, experienced in development and documentations:
                     <ul>
-                        <li>Create new features to existing systems</li>
-                        <li>Create test cases for unit testing</li>
-                        <li>Experience in developing with different enviorments: Eg. DEV, UAT, PROD environments</li>
-                        <li>Create step by step guide and documentation for using and deploying features</li>
+                        <li>Created new features to existing systems</li>
+                        <li>Created test cases for unit testing</li>
+                        <li>Experienced in developing with different enviorments: Eg. DEV, UAT, PROD environments</li>
+                        <li>Created step by step guide and documentation for using and deploying features</li>
                     </ul>`,
         year: "2020 to 2021"
     },
@@ -378,8 +384,8 @@ const workInfo = {
         role: "Student Internship",
         details: `Worked under SideFX Studios for Temasek Poly Internship Program:
                     <ul>
-                        <li>Design multiple procedural 3D assets on Houdini software for company projects</li>
-                        <li>Develop 3D games on Unity software for company projects</li>
+                        <li>Designed multiple procedural 3D assets on Houdini software for company projects</li>
+                        <li>Developed 3D games on Unity software for company projects</li>
                     </ul>`,
         year: "2017 to 2018"
     }
