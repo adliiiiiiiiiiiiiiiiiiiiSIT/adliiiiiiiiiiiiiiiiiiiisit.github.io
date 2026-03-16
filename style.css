@@ -170,6 +170,39 @@ section {
   cursor: pointer;
 }
 
+#skillChip{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
 li {
   margin-bottom: 15px;
   line-height: 1.5;

@@ -17,13 +17,31 @@ const Navigation = {
 
 const MainPage = {
     setMainInfo(){
-        document.getElementById("description").textContent = mainInfo.description;
-        document.getElementById("skills").innerHTML = mainInfo.skills;
+        document.getElementById("description").innerHTML = mainInfo.description;
         document.getElementById("email").textContent = "Email: " + mainInfo.email;
     
         // Links
         document.getElementById("link-github").href = mainInfo.links.github;
         document.getElementById("link-linkedin").href = mainInfo.links.linkedin;
+    },
+
+    setSkillsList(){
+        const skills = document.getElementById("skills");
+        let skillsHTML = "";
+
+        for (const skill in mainInfo.skills) {
+            const section = mainInfo.skills[skill];
+
+            skillsHTML += `
+                <div class="skill-category">
+                    <h3>${section.sectionName}</h3>
+                    <div class="chips-container">
+                        ${section.sectionList.map(skillChip => `<span class="chip">${skillChip}</span>`).join('')}
+                    </div>
+                </div>`;
+        }
+
+        skills.innerHTML = skillsHTML;
     },
 
     setProjectList(){

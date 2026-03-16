@@ -253,19 +253,34 @@ const projectInfo = {
 const mainInfo = {
     name: "Muhammad Adli Bin Jumahat",
     title: "Aspiring Game Developer",
-    description: "I am currently an SIT student, passionate about making games. ",
+    description: `I am currently a second year undergraduate, studying Computing Science at Singapore Institute of Technology (SIT).
+                    I enjoy playing video games and always have a passion on building something, whether something in game or
+                    in real life. I aspire to be a game developer and hope to develop games people enjoy like how I did growing up.
+                    <Br><Br>
+                    I have experiences in working as Quality Assurance in a game company for 2 years, from development to live-operations and learn about game programming in Polytechnic and during my self learning.
+                    Now I am studying towards Softwares and Internet of Things (IoT) in my university. I have learnt a lot during my time working and in SIT and can't wait
+                    to apply my new knowledge to my work.
+                    <Br><Br>
+                    I love programming and developing new features as it very similar to solving puzzles in video games. 
+                    I am proactive in achieving my goals and am not afraid to face challenges to achieve them.
+                    I am also a teamplayer and gets along well with the people I work with during my time as a QA or as a student.`,
+
     email: "mdadlij@gmail.com",
 
-    skills:`
-            <ul>
-                <li>Programming</li>
-                    <ul>
-                        <li> C#
-                        <li> Java
-                        <li> Phython
-                        <li> Kotlin
-                    </ul>
-            </ul>`,
+    skills:{
+        developmentEngine:{
+            sectionName: "Development Engines",
+            sectionList: ["Godot","Unity","Android Studio"],
+        },
+        programmingLanguage:{
+            sectionName: "Programming Languages",
+            sectionList: ["C#","C/C++","Kotlin","Java","Python"],
+        },
+        database:{
+            sectionName: "Database",
+            sectionList: ["MySQL","MongoDB","FirestoreDB"],
+        },
+    },
 
     mainProject:{
         mainProject1: projectInfo.personalProject.catToTheTop,
