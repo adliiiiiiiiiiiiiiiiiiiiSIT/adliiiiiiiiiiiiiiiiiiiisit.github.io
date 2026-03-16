@@ -1,60 +1,90 @@
+/*USED GEMINI AI TO DESIGN THE LOOK OF THE WEBSITE*/
+/* --- Root Variables: Dark Studio Palette --- */
+:root {
+  --bg: #0f1115;
+  --text: #e2e8f0;
+  --accent: #ff4757;
+  --muted: #94a3b8;
+  --panel: #1a1c22;
+  --border-color: #2d333f;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
 }
 
+/* --- Header & Navigation --- */
 header {
-  background: #222;
+  background: #000;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem; /* Kept your structure, just tightened slightly */
+  border-bottom: 2px solid var(--border-color);
 }
 
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* --- Sections --- */
 section {
-  max-width: 800px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 3rem auto;
   padding: 2rem;
+  background: var(--panel);
+  border-radius: 8px;
 }
 
 h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border-color);
+  display: inline-block;
+  color: white;
 }
 
-#project-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* --- Project List --- */
 .project-list {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto auto;
-  gap: 12px;
-
-  max-width: 900px;
+  grid-template-columns: 240px 1fr;
+  gap: 30px;
+  max-width: 1000px;
   width: 100%;
-
-  margin-bottom: 1px;
-
-  padding: 12px;
-  border: 4px solid black;
-  background: white;
+  margin-bottom: 3rem;
+  background: transparent;
+  border: none;
 }
 
 .project-list-thumbnail {
   grid-row: 1 / span 2;
-  aspect-ratio: 1 / 1;
-
+  aspect-ratio: 16 / 9;
   width: 100%;
-  border: 4px solid black;
-
+  border-radius: 8px;
   overflow: hidden;
-  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border: 1px solid var(--border-color);
 }
 
 .project-list-thumbnail img {
@@ -64,40 +94,14 @@ h2 {
   display: block;
 }
 
-.project-list-top,
-.project-list-bottom {
-  background: white;
-  color: black;
-  padding: 10px;
-  border: 4px solid black;
-}
-
+.project-list-top { font-size: 1.5rem; font-weight: 800; color: white; }
+.project-list-bottom { color: var(--muted); }
 .project-list-bottom a {
-  color: #0066cc;
+  color: var(--accent);
   text-decoration: none;
   font-weight: bold;
-  text-align: right;
-}
-
-.project-columns {
-  display: flex;
-  gap: 40px;            
-  align-items: flex-start;
-}
-
-.project-columns > div {
-  flex: 1;
-}
-
-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem;
-}
-
-.project-list {
-  grid-template-columns: 100px 1fr;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 #project-banner {
@@ -105,16 +109,11 @@ section {
     height: 400px;
     object-fit: cover;
     object-position: center;
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid var(--border-color);
     display: block;
 }
 
-@media (max-width: 768px) {
-    #project-banner {
-        height: 250px;
-    }
-}
-
+/* --- Gallery Grid (Maintained) --- */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -127,10 +126,11 @@ section {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: contain;
-    border: 4px solid black;
-    background: black;
+    border: 4px solid var(--border-color);
+    background: #000;
 }
 
+/* --- Modal (Maintained) --- */
 .modal {
   display: none;
   position: fixed;
@@ -139,24 +139,25 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   padding-top: 50px;
 }
 
 .gallery-modal-content {
-  margin:auto;
+  margin: auto;
   display: block;
   max-width: 80%;
   max-height: 80%;
+  border: 2px solid var(--border-color);
 }
 
 .gallery-modal-caption {
   margin: auto;
   display: block;
   width: 80%;
-  max-width:  700px;
+  max-width: 700px;
   text-align: center;
-  color: #ccc;
+  color: var(--muted);
   padding: 10px;
 }
 
@@ -164,60 +165,34 @@ section {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #ccc;
+  color: var(--text);
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
 }
 
-#skillChip{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.skill-category h3 {
-    font-size: 1.1rem;
-    color: black;
-    margin-bottom: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
+/* --- Skill Chips --- */
 .chips-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .chip {
-    background-color: #121212;
-    color: #e0e0e0;
-    padding: 8px 16px;
+    background-color: var(--border-color);
+    color: white;
+    padding: 6px 14px;
     border-radius: 4px;
-    border: 1px solid #333;
+    border: none;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.9rem;
-    transition: all 0.3s ease;
     cursor: default;
 }
 
-li {
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
+li { margin-bottom: 15px; line-height: 1.5; color: var(--text); }
 
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .project-list { grid-template-columns: 1fr; }
+    #project-banner { height: 250px; }
 }
