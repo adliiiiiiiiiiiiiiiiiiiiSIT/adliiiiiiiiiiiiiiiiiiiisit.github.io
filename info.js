@@ -5,8 +5,8 @@ const projectInfo = {
             name: "Cat To The Top (2024)",
             summary: `A casual mobile game where you jump as high as you can within the time limit.
                         Simply tap the screen to jump! A personal project I made to get familiar with the Godot Game Engine.`,
-            thumbnail: "/assets/catToTheTop_thumbnail.png",
-            banner: "/assets/catToTheTop_thumbnail.png",
+            thumbnail: "/assets/catToTheTop/thumbnail.png",
+            banner: "/assets/catToTheTop/banner.png",
             contributions:`As part of my learning, I developed the entire project except for the music. This entails:
                             <ul>
                                 <li> Implementing the Level Manager that load the different platform patterns to form the difficulty of the game.</li>
@@ -37,21 +37,22 @@ const projectInfo = {
                             </li>
                         </ul>`,
             gallery: [
-                {type: "video", src: "https://www.youtube.com/embed/tgbNymZ7vqY"},
-                {type: "video", src: "https://www.youtube.com/embed/tgbNymZ7vqY"},
-                {type: "image", src: "/assets/catToTheTop_thumbnail.png"},
-                {type: "image", src: "/assets/catToTheTop_thumbnail.png"},
-                {type: "image", src: "/assets/vapeInvader_thumbnail.png"},
-                {type: "image", src: "/assets/catToTheTop_thumbnail.png"},
+                {type: "video", src: "https://www.youtube.com/embed/Cl4Y2xWxfuE", alt: "Demo gameplay video of Cat To The Top"},
+                {type: "image", src: "/assets/catToTheTop/catToTheTop_mainLanding.png", alt: "Main Landing screen for Cat To The Top"},
+                {type: "image", src: "/assets/catToTheTop/catToTheTop_shop_requirement_token.png", alt: "Unlock new character based on cat tokens"},
+                {type: "image", src: "/assets/catToTheTop/catToTheTop_shop_requirement_highscore.png", alt: "Unlock new character based on milestone"},
+                {type: "image", src: "/assets/catToTheTop/catToTheTop_pattern_creation.png", alt: "Creating a new pattern through Godot Resource File"},
+                {type: "image", src: "/assets/catToTheTop/catToTheTop_catType_creation.png", alt: "Creating a new cat character through Godot Resource File"},
+                {type: "image", src: "/assets/catToTheTop/catToTheTop_skill_creation.png", alt: "Creating a new skill through Godot Resource File"},
             ]
         },
         vapeInvaders: {
             id: "vapeInvaders",
-            name: "Vape Invaders (2026)",
+            name: "Vape Invaders WIP (2026)",
             summary: `A tower defense game about defending your lungs from the harmful effects of vaping.
                         Summon your blood cells and fight against the harmful invaders! A personal project made by me and other students.`,
-            thumbnail: "/assets/vapeInvader_thumbnail.png",
-            banner: "/assets/vapeInvader_thumbnail.png",
+            thumbnail: "/assets/vapeInvaders/thumbnail.png",
+            banner: "/assets/vapeInvaders/banner.png",
             contributions: `Although this is technically a school project for a module, We decided to make a serious game as our product.
                         <Br>My contributions to the game were:
                         <ul>
@@ -63,7 +64,7 @@ const projectInfo = {
             highlights: `
                         <ul>
                             <li>
-                                <strong>CSV to Cutscene Json Program:</strong> Developed a python script that reads cutscene data from csv and generate the json files to be used by the cutscene manager.
+                                <strong>Excel to Cutscene Json Program:</strong> Developed a python script that reads cutscene data from .xlsx and generate the json files to be used by the cutscene manager.
                                  Json file contains the information on who is in a scene, speaker and the dialogue text. Made the process of developing the cutscene significantly easier.
                             </li>
                             <li>
@@ -72,15 +73,22 @@ const projectInfo = {
                                 The State Machine is also designed with composition, plug in the different states to form the behavior of the unit using signals.
                             </li>
                         </ul>`,
-            gallery: [],
+            gallery: [
+                {type: "image", src: "/assets/vapeInvaders/vapeInvaders_mainLanding.png", alt: "Main Landing screen of VapeInvaders"},
+                {type: "image", src: "/assets/vapeInvaders/vapeInvaders_gameplay.png", alt: "Level gameplay of VapeInvaders"},
+                {type: "image", src: "/assets/vapeInvaders/vapeInvaders_cutscene_human.png", alt: "Cutscene gameplay of VapeInvaders featuring main character"},
+                {type: "image", src: "/assets/vapeInvaders/vapeInvaders_cutscene_cell.png", alt: "Cutscene gameplay of VapeInvaders featuring cells in the body"},
+                {type: "image", src: "/assets/vapeInvaders/vapeInvaders_cutscene_creation_flow.png", alt: "Values inside the excel files get extracted into a json file via a python script, usable to load cutscenes"},
+                {type: "image", src: "/assets/vapeInvaders/vapeInvaders_composition_development.png", alt: "Unit components being made up of resuable components to form the ally/enemy unit"},
+            ],
         },
         fireGame:{
             id: "fireGame",
             name: "Fire Safety Training (2025)",
             summary: `A point and click game that test your decision making skills in various fire emergency scenarios. Informs you on the Dos and Don'ts for when you are in a fire emergency!
                         A personal project made by me and other students.`,
-            thumbnail: "",
-            banner: "",
+            thumbnail: "/assets/fireGame/thumbnail.png",
+            banner: "/assets/fireGame/banner.png",
             contributions: `Although this is technically a school project for a module, We decided to make an educational game as our product.
                             <Br>My contributions to the game were:
                             <ul>
@@ -98,76 +106,27 @@ const projectInfo = {
                                     can lead to loading another scenario for a more complex scenario level experience.
                             </li>
                             <li>
-                                <strong>Reusable Interactable Objects:</strong> Developed such that the same interactable object can be used in different scenarios as a correct action or wrong action,
-                                    with its own explanation why the action is correct or wrong in that scenario context.
+                            <strong>Reusable Interactable Objects:</strong> Developed such that the same interactable object can be used in different scenarios as a correct action or wrong action,
+                            with its own explanation why the action is correct or wrong in that scenario context.
                             </li>
-                        </ul>`,
-            gallery: [],
-        },
-    },
+                            </ul>`,
+                            gallery: [
+                                {type: "video", src:"https://www.youtube.com/embed/gb9JlKkJMiY", alt:"Demo gameplay video of Fire Safety Training"},
+                                {type: "image", src:"/assets/firegame/fireGame_mainLanding.png", alt:"Fire Safety Training Main Landing Screen"},
+                                {type: "image", src:"/assets/firegame/fireGame_scenario_action_explanation.png", alt:"Game informing the player why this step is correct for this scenario"},
+                                {type: "image", src:"/assets/firegame/fireGame_scenario_creation.png", alt:"Creation of a scenario through Godot Resource File"},
+                            ],
+                        },
+                    },
     schoolProject: {
-        gameHub: {
-            id:"gameHub",
-            name:"Game Information Database System (2025)",
-            summary: `A database project that display information of video games through SQL and NoSQL databases. 
-                    Database consists of datasets across different game platform such as the game sales and game reviews while the website enables the user to perform CRUD operations to the database`,
-            thumbnail: "",
-            banner: "",
-            contributions: `My responsibilities for this project were:
-                            <ul>
-                                <li>Cleaning up the dataset to ensure no duplicate entries</li>
-                                <li>Upload CSV to SQL Database feature</li>
-                                <li>Implementing the Achievements page, including CREATE, READ, UPDATE and DELETE of achievements</li>
-                            </ul>`,
-            highlights: `
-                        <ul>
-                            <li>
-                                <strong>User Privillege Permissions:</strong> Only admin accounts are able to perform CRUD in the website. The rest of the accounts can only perform READ operations
-                            </li>
-                            <li>
-                                <strong>Relational Database:</strong> Main Tables such as Games, Languages, Companies are connected via join tables between each other.
-                                <Br>Eg. A company can be in a game developer relationship with a game while a game publisher to another game. 
-                            </li>
-                        </ul>`,
-            gallery: [],
-        },
-        learningHub:{
-            id:"learningHub",
-            name:"Learning Hub (2025)",
-            summary: `A cloud storage project that aims to centralize a learning platform for students and teachers. Project uses microservices to store documents and host the website.`,
-            thumbnail: "",
-            banner: "",
-            contributions: `My responsibilities for this project were:
-                            <ul>
-                                <li>Designing the System Architecture of the project</li>
-                                <li>Whiteboard Canvas Services using Fabric.js</li>
-                            </ul>`,
-            highlights: `
-                        <ul>
-                            <li>
-                                <strong>Real-time Whiteboard Collaboration:</strong> Multiple users can access the same whiteboard canvases across different whiteboard canvas.
-                                    Whiteboard Server checks the connection request and assign the client to the correct whiteboard room. 
-                                    Server updates all users in the same room any new strokes being made in real-time.
-                            </li>
-                            <li>
-                                <strong>Containerized Servers:</strong> Backend, Flashcard and Whiteboard servers are containerized, 
-                                    making them able to easily deployed in a container management systems like Kubernetes, to scale the server load respectively.
-                            </li>
-                            <li>
-                                <strong>Whiteboard Canvas Saved State:</strong> Whiteboard strokes are stored in Firestore DB under its document id. 
-                                    Upon entering the canvas, previous strokes get loaded in making the user able to see previous drawings.
-                            </li>
-                        </ul>`,
-            gallery:[],
-        },
         morphLearn:{
             id:"morphLearn",
             name:"MorphLearn (2026)",
             summary: `An android application app developed with Kotlin language and Jetpack Compose in Android Studio. 
                     The project aims to enhance student learning by integrating AI to summarize notes and generate questions to quiz to test the student.
                     The user can upload a PDF file which  gets sent to Gemini and returns a json response containing generated notes and generated quiz questions based on the pdf uploaded.`,
-            thumbnail: "",
-            banner: "",
+            thumbnail: "/assets/morphLearn/thumbnail.png",
+            banner: "/assets/morphLearn/banner.png",
             contributions: `My responsibilities for this project were:
                             <ul>
                                 <li>Designing the System Architecture of the project.</li>
@@ -189,13 +148,86 @@ const projectInfo = {
                                 so that the questions can be tailored to focus on the user's weaknesses.
                             </li>
                         </ul>`,
-            gallery: [],
+            gallery: [
+                {type: "image", src: "/assets/morphLearn/architecture_diagram.png", alt: "MorphLearn Architecture Diagram"},
+                {type: "image", src: "/assets/morphLearn/morphLearn_homepage.png", alt: "MorphLearn dashboard"},
+                {type: "image", src: "/assets/morphLearn/morphLearn_upload_pdf.gif", alt: "Uploading PDF to get generated notes and quiz"},
+                {type: "image", src: "/assets/morphLearn/morphLearn_generated_notes_quiz.gif", alt: "Viewing generated notes and attempting a generated quiz based on an uploaded PDF"},
+            ],
+        },
+        gameHub: {
+            id:"gameHub",
+            name:"Game Information Database System (2025)",
+            summary: `A database project that display information of video games through SQL and NoSQL databases. 
+            Database consists of datasets across different game platform such as the game sales and game reviews while the website enables the user to perform CRUD operations to the database`,
+            thumbnail: "/assets/gameHub/thumbnail.png",
+            banner: "/assets/gameHub/banner.png",
+            contributions: `My responsibilities for this project were:
+            <ul>
+                                <li>Cleaning up the dataset to ensure no duplicate entries</li>
+                                <li>Upload CSV to SQL Database feature</li>
+                                <li>Implementing the Achievements page, including CREATE, READ, UPDATE and DELETE of achievements</li>
+                            </ul>`,
+            highlights: `
+                        <ul>
+                            <li>
+                                <strong>User Privillege Permissions:</strong> Only admin accounts are able to perform CRUD in the website. The rest of the accounts can only perform READ operations
+                            </li>
+                            <li>
+                                <strong>Relational Database:</strong> Main Tables such as Games, Languages, Companies are connected via join tables between each other.
+                                <Br>Eg. A company can be in a game developer relationship with a game while a game publisher to another game. 
+                            </li>
+                        </ul>`,
+            gallery: [
+                {type: "image", src: "/assets/gameHub/database_er_diagram.png", alt: "Project Database Entity Relationship Diagram"},
+                {type: "image", src: "/assets/gameHub/gameHub_filterList.png", alt: "Result list based on filter option set"},
+                {type: "image", src: "/assets/gameHub/gameHub_achievementList.png", alt: "Achievement page of a game"},
+                {type: "image", src: "/assets/gameHub/gameHub_achievement_crud.png", alt: "Add Achievement page for Admin"},
+                {type: "image", src: "/assets/gameHub/gameHub_upload_csv_error.png", alt: "Upload CSV page for Admin (errors found in csv)"},
+                {type: "image", src: "/assets/gameHub/gameHub_upload_csv_valid.png", alt: "Upload CSV page for Admin (no issues found in csv)"},
+            ],
+        },
+        learningHub:{
+            id:"learningHub",
+            name:"Learning Hub (2025)",
+            summary: `A cloud storage project that aims to centralize a learning platform for students and teachers. Project uses microservices to store documents and host the website.`,
+            thumbnail: "/assets/learningHub/thumbnail.png",
+            banner: "/assets/learningHub/banner.png",
+            contributions: `My responsibilities for this project were:
+                            <ul>
+                                <li>Designing the System Architecture of the project</li>
+                                <li>Whiteboard Canvas Services using Fabric.js</li>
+                                <li>Whiteboard Server and its integration with the project DB.</li>
+                            </ul>`,
+            highlights: `
+                        <ul>
+                            <li>
+                                <strong>Real-time Whiteboard Collaboration:</strong> Multiple users can access the same whiteboard canvases across different whiteboard canvas.
+                                    Whiteboard Server checks the connection request and assign the client to the correct whiteboard room. 
+                                    Server updates all users in the same room any new strokes being made in real-time.
+                            </li>
+                            <li>
+                                <strong>Containerized Servers:</strong> Backend, Flashcard and Whiteboard servers are containerized, 
+                                    making them able to easily deployed in a container management systems like Kubernetes, to scale the server load respectively.
+                            </li>
+                            <li>
+                                <strong>Whiteboard Canvas Saved State:</strong> Whiteboard strokes are stored in Firestore DB under its document id. 
+                                    Upon entering the canvas, previous strokes get loaded in making the user able to see previous drawings.
+                            </li>
+                        </ul>`,
+            gallery:[
+                {type: "image", src: "/assets/learningHub/architecture_diagram.png", alt: "Project Architecture Diagram"},
+                {type: "image", src: "/assets/learningHub/whiteboard_feature.gif", alt: "Real-time drawing with multiple users"},
+                {type: "image", src: "/assets/learningHub/whiteboard_savestate.png", alt: "Firestore DB storing the drawing strokes under the whiteboard id"},
+            ],
         },
         sqaPipeline:{
             id:"sqaPipeline",
             name:"DevSecOps Pipeline Configuration (2026)",
             summary: `A software quality assurance project in collaboration with WizVision. 
                     The aim of the project is to provide the user a intelligent pipeline configuration website that can cater to the user's need in their app development.`,
+            thumbnail: "/assets/sqaPipeline/thumbnail.png",
+            banner: "/assets/sqaPipeline/banner.png",
             contributions: `My responsibilities for this project were:
                             <ul>
                                 <li>Implementing an AI Chatbox that serves as the User's Pipeline Configuration Assistant</li>
@@ -209,7 +241,11 @@ const projectInfo = {
                                 <strong>AI Copy Paste Response:</strong> The AI will provide improved versions for each .yml files provided in a simple copy and paste manner while having the explantion and further suggestion at the end of the response
                             </li>
                         </ul>`,
-            gallery: [],
+            gallery: [
+                {type: "image", src: "/assets/sqaPipeline/sqa_pipeline_configuration_page.png", alt: "DevSecOps Pipeline Configuration setting page"},
+                {type: "image", src: "/assets/sqaPipeline/sqa_pipeline_ai_chatbox.png", alt: "DevSecOps Pipeline AI Configuration Assistance"},
+                {type: "image", src: "/assets/sqaPipeline/sqa_pipeline_ai_response.gif", alt: "Sample of AI response to user prompt"},
+            ],
         },
     }
 };
