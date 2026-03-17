@@ -112,9 +112,9 @@ const projectInfo = {
                             </ul>`,
                             gallery: [
                                 {type: "video", src:"https://www.youtube.com/embed/gb9JlKkJMiY", alt:"Demo gameplay video of Fire Safety Training"},
-                                {type: "image", src:"/assets/firegame/fireGame_mainLanding.png", alt:"Fire Safety Training Main Landing Screen"},
-                                {type: "image", src:"/assets/firegame/fireGame_scenario_action_explanation.png", alt:"Game informing the player why this step is correct for this scenario"},
-                                {type: "image", src:"/assets/firegame/fireGame_scenario_creation.png", alt:"Creation of a scenario through Godot Resource File"},
+                                {type: "image", src:"/assets/fireGame/fireGame_mainLanding.png", alt:"Fire Safety Training Main Landing Screen"},
+                                {type: "image", src:"/assets/fireGame/fireGame_scenario_action_explanation.png", alt:"Game informing the player why this step is correct for this scenario"},
+                                {type: "image", src:"/assets/fireGame/fireGame_scenario_creation.png", alt:"Creation of a scenario through Godot Resource File"},
                             ],
                         },
                     },
@@ -285,6 +285,10 @@ const mainInfo = {
         database:{
             sectionName: "Database",
             sectionList: ["MySQL","MongoDB","FirestoreDB"],
+        },
+        versionControl:{
+            sectionName: "Version Control",
+            sectionList: ["Git","GitHub","SourceTree"],
         },
     },
 
